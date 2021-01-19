@@ -1,0 +1,141 @@
+        *{
+			padding: 0;
+			margin: 0;
+            outline: none;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+
+          background-color: #e60722;
+        }
+
+        .imgYoutube{
+            top: 4px;
+        }
+
+        button{
+        	position: absolute;
+        	top: 82%;
+        	left: 50%;
+        	transform: translate(-50%, -50%);
+        }
+
+        button{
+        	background: none;
+        	color: #ccc;
+        	width: 240px;
+        	height: 80px;
+        	border: 1px solid #338033;
+        	font-size: 18px;
+        	border-radius: 4px;
+        	transition: .6s;
+        	overflow: hidden;
+        }
+
+        button:focus{
+        	outline: none;
+        }
+
+        button:before{
+        	content: '';
+        	display: block;
+        	position: absolute;
+        	background: rgba(255,255,255,.5);
+        	width: 60px;
+        	height: 100%;
+        	left: 0;
+        	top: 0;
+        	opacity: .5s;
+        	filter: blur(30px);
+        	transform: translateX(-130px) skewX(-15deg);
+        }
+
+        button:after{
+        	content: '';
+        	display: block;
+        	position: absolute;
+        	background: rgba(255,255,255,.2);
+        	width: 30px;
+        	height: 100%;
+        	left: 30px;
+        	top: 0;
+        	opacity: 0;
+        	filter: blur(30px);
+        	transform: translate(-100px) scaleX(-15deg);
+        }
+
+        button:hover{
+        	background: #338033;
+        	cursor: pointer;
+        }
+
+        button:hover:before{
+        	transform: translateX(300px) skewX(-15deg);
+        	opacity: .6;
+        	transition: .7s;
+        }
+         button:hover:after{
+        	transform: translateX(300px) skewX(-15deg);
+        	opacity: 1;
+        	transition: .7s;
+        }
+
+.input_text{
+    display: block;
+    width: 320px;
+    height: 50px;
+    background: hsl(0, 100%, 90%);
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.5);
+    font-family: Source Sans Pro;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.text1{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+    background: #e60722;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text2{
+    letter-spacing: 4px;
+    font-size: 17px;
+    color: white;
+}
+
+.container{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container span{
+    display: block;
+    text-transform: uppercase;
+}
+
+@keyframes text{
+0%{
+    color:#e60722;
+     margin-bottom: -15px;
+}
+30%{
+    letter-spacing: 25px;
+    margin-bottom: -15px;
+}
+85%{
+    letter-spacing: 8px;
+    margin-bottom: -15px;
+}
+
+}
