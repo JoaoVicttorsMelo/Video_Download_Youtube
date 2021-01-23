@@ -4,6 +4,6 @@ gunicorn==19.10.0
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
-pytube==10.4.1
+pytube==9.6.0
 typing-extensions==3.7.4.3
 Werkzeug==1.0.1
